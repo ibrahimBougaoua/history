@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #3f51b5;
+    /* padding: 5px; */
+    height: 100px;
+}
+
+h1.header-logo {
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+    font-family: inherit;
+    position: relative;
+    top: 28px;
+}
+.ht-yellow {
+    color: #ffc107;
+}
+.navbar {
+    background-color: #3f51b5;
+    box-shadow: 0 1px 8px rgb(0 0 0 / 35%);
+    line-height: 25px;
+}
+
+ul.menu {
+    max-width: 1154px;
+    margin: 0 auto;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    transition: .3s;
+    color: rgb(255 255 255);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 15px;
+}
+
+.menu li:hover {
+    background-color: #ffc107;
+}
+
+.menu > li {
+    margin:0;
+    display: inline-block;
+}
+
+.menu li:hover .submenu, .submenu li:hover .supersub {
+    display: block;
+}
+
+.supersub {
+    top: 0;
+    right: 0;
+    transform: translate(100%,0);
+}
+.submenu li {
+    padding: 0 0;
+    margin: 0 20px 0 0;
+    position: relative;
+}
+.submenu li a{
+    color: #fff;
+}
+
+.submenu, .supersub {
+    background-color: #ffc107;
+    position: absolute;
+    display: none;
+}
+
+.menu > li:hover > a {
+    box-shadow: inset 0 -5px #ffc107;
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.content {
+    margin: 20px 120px;
+}
+
+main.main {
+    float: left;
+    width: 70%;
+    background-color: #fff;
+    box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
+}
+
+aside.aside {
+    float: right;
+    width: 28%;
+    background-color: #fff;
+    box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
+}
+
+
+
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    color: #444444;
+    font-size: 70%;
+    text-align: center;
+    font-weight: 600;
+    margin: 5px;
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ol li {
+    padding: 10px;
+}
+
+section {
+    font-size: 15px;
+    color: #3e3e3e;
+    padding: 12px;
+    font-family: sans-serif;
+    box-shadow: 0 0px 2px rgb(0 0 0 / 35%);
+}
+
+header {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p {
+    line-height: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #3f51b5;
+}
+
+section#biographie ol li section {
+    margin: -10px;
+    box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 800;
+    color: #3f51b5;
+    text-decoration-line: underline;
+}
+h2 {
+    color: #3F51B5;
+    text-decoration-line: underline;
+}
+
+aside.aside h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+tr {
+    display: grid;
+    box-shadow: 0 0px 2px rgb(0 0 0 / 35%);
+    margin-bottom: 10px;
+}
+table {
+    padding: 5px;
+}
+th {
+    text-align: left;
+    color: #3949a3;
+    padding: 5px;
+}
+td {
+    padding: 5px;
+    color: #444;
+}
+footer.footer {
+    position: relative;
+    top: 15px;
+    width: 100%;
+    display: flex;
+    background-color: #3f51b5;
+    padding: 10px;
+}
+
+address {
+    color: #3f51b5;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+address a {
+    color: #464646;
+}
+
+strong {
+    color: #3f51b5;
+}
+h3 {
+    color: #3f51b5;
+    text-decoration-line: underline;
+}
+
+ht-yellow:hover {
+    color: white;
+}
