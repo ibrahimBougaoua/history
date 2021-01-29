@@ -202,9 +202,11 @@ tr {
     display: grid;
     box-shadow: 0 0px 2px rgb(0 0 0 / 35%);
     margin-bottom: 10px;
+    width: 100%;
 }
 table {
     padding: 5px;
+    width: 100%;
 }
 th {
     text-align: left;
@@ -300,6 +302,26 @@ ht-yellow:hover {
     .menu > li:hover > a {
         background-color:transparent;
     }
+    .submenu, .supersub {
+        width: 100%;
+    }
+    .content {
+        margin: 20px 30px;
+    }
+    main.main {
+        width:100%;
+    }
+    aside.aside {
+        margin-top: 12px;
+        width:100%;
+    }
+    address {
+        width: 85%;
+        left: 10px;
+    }
+}
+
+@media screen and (max-width:1000px) {
     .content {
         margin: 20px 30px;
     }
