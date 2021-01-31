@@ -2,7 +2,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
+ul {
+    list-style: none;
+}
 .header {
     background-color: #3f51b5;
     padding: 10px;
@@ -219,7 +221,7 @@ td {
 }
 footer.footer {
     position: relative;
-    top: 80px;
+    top: 105px;
     width: 100%;
     display: flex;
     background-color: #3f51b5;
@@ -239,7 +241,7 @@ address {
     width: 35%;
     position: relative;
     left: 22%;
-    bottom: 70px;
+    bottom: 95px;
 }
 
 address a {
@@ -363,5 +365,36 @@ h1.footer-logo {
     position: relative;
     left: 18%;
     height: 122px;
-    bottom: 70px;
+    bottom: 96px;
+}
+.links {
+    position: absolute;
+    width: 45%;
+    top: 50px;
+    left: 35%;
+}
+
+.links ul li {
+    float: left;
+    margin: 22px 0 0 0;
+}
+
+.links ul li a {
+    color: #fff;
+    border: 1px solid white;
+    padding: 8px;
+    margin: 5px 5px 0px 2px;
+    font-size: 16px;
+    transition: 2s;
+}
+
+.links ul li a:hover {
+    background-color: #ffc107;
+    padding-left: 16px;
+    border: #ffc107;
+    transition: 2s;
+}
+
+.links ul {
+    margin: 0;
 }
