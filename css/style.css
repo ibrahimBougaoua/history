@@ -37,7 +37,7 @@ h1.header-logo {
 }
 .navbar {
     background-color: #3f51b5;
-    box-shadow: 0 0px 40px rgb(0 0 0 / 30%);
+    box-shadow: 0 0px 30px rgb(0 0 0 / 50%);
     line-height: 25px;
 }
 
@@ -113,7 +113,7 @@ main.main {
     float: left;
     width: 70%;
     background-color: #fff;
-    box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
+    box-shadow: 0 0px 2px rgb(0 0 0 / 35%);
 }
 
 aside.aside {
@@ -219,10 +219,11 @@ td {
 }
 footer.footer {
     position: relative;
-    top: 15px;
+    top: 80px;
     width: 100%;
     display: flex;
     background-color: #3f51b5;
+    box-shadow: 0 0px 30px rgb(0 0 0 / 50%);
 }
 
 address {
@@ -230,13 +231,15 @@ address {
     font-size: 16px;
     font-weight: 800;
     text-align: center;
+    box-shadow: 0 0px 10px rgb(0 0 0 / 30%);
     background-color: white;
     padding: 12px;
     margin: 15px;
     border-radius: 8px;
     width: 35%;
     position: relative;
-    left: 30%;
+    left: 22%;
+    bottom: 70px;
 }
 
 address a {
@@ -336,4 +339,29 @@ ht-yellow:hover {
         width: 85%;
         left: 10px;
     }
+}
+
+.ht-blue {
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #3f51b5;
+    border-radius: 60px 0px 56px 0px;
+    margin-right: 8px;
+    padding: 15px;
+}
+h1.footer-logo {
+    color: #3f51b5;
+    font-size: 32px;
+    text-align: center;
+    box-shadow: 0 0px 10px rgb(0 0 0 / 30%);
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+    line-height: 4;
+    border-radius: 8px;
+    width: 25%;
+    position: relative;
+    left: 18%;
+    height: 122px;
+    bottom: 70px;
 }
