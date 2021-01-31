@@ -2,6 +2,26 @@ body {
     margin: 0;
     padding: 0;
 }
+h4:hover {
+    color: #ffc107;
+    transition: 1s;
+}
+h3:hover {
+    color: #ffc107;
+    transition: 1s;
+}
+h2:hover {
+    color: #ffc107;
+    transition: 1s;
+}
+strong:hover{
+    color: #ffc107;
+    transition: 1s;
+}
+h4,h3,h2,strong {
+    transition: 1s;
+    cursor: pointer;
+}
 ul {
     list-style: none;
 }
@@ -240,7 +260,7 @@ address {
     border-radius: 8px;
     width: 35%;
     position: relative;
-    left: 22%;
+    left: 20%;
     bottom: 95px;
 }
 
@@ -363,7 +383,7 @@ h1.footer-logo {
     border-radius: 8px;
     width: 25%;
     position: relative;
-    left: 18%;
+    left: 16%;
     height: 122px;
     bottom: 96px;
 }
@@ -371,7 +391,7 @@ h1.footer-logo {
     position: absolute;
     width: 45%;
     top: 50px;
-    left: 35%;
+    left: 32%;
 }
 
 .links ul li {
@@ -397,4 +417,24 @@ h1.footer-logo {
 
 .links ul {
     margin: 0;
+}
+
+span.top a {
+    color: #fff;
+    background-color: #3f51b5;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 5px;
+    float: right;
+    position: relative;
+    top: -30px;
+    transition: 1.5s;
+}
+span.top a:hover {
+    background-color: #ffc107;
+    transition: 1.5s;
+}
+span.top {
+    margin: 40px 0 0 0;
+    display: block;
 }
