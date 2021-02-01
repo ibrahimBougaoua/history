@@ -5,18 +5,22 @@ body {
 h4:hover {
     color: #ffc107;
     transition: 1s;
+    box-shadow: inset 0 -1px #ffc107;
 }
 h3:hover {
     color: #ffc107;
     transition: 1s;
+    box-shadow: inset 0 -3px #ffc107;
 }
 h2:hover {
     color: #ffc107;
     transition: 1s;
+    box-shadow: inset 0 -2px #ffc107;
 }
 strong:hover{
     color: #ffc107;
     transition: 1s;
+    box-shadow: inset 0 -2px #ffc107;
 }
 h4,h3,h2,strong {
     transition: 1s;
@@ -124,6 +128,7 @@ ul.menu {
 .menu > li:hover > a {
     box-shadow: inset 0 -5px #ffc107;
     background-color: #ffc107;
+    /* box-shadow: 0 0px 30px rgb(0 0 0 / 50%); */
     color:#fff!important;
 }
 
@@ -234,6 +239,13 @@ th {
     text-align: left;
     color: #3949a3;
     padding: 5px;
+    transition: 1s;
+}
+th:hover {
+    cursor: pointer;
+    color: #ffc107;
+    transition: 1s;
+    box-shadow: inset 0 -1px #ffc107;
 }
 td {
     padding: 5px;
@@ -241,7 +253,7 @@ td {
 }
 footer.footer {
     position: relative;
-    top: 105px;
+    top: 125px;
     width: 100%;
     display: flex;
     background-color: #3f51b5;
@@ -259,6 +271,7 @@ address {
     margin: 15px;
     border-radius: 8px;
     width: 35%;
+    height: 6em;
     position: relative;
     left: 20%;
     bottom: 95px;
@@ -344,6 +357,20 @@ ht-yellow:hover {
         width: 85%;
         left: 10px;
     }
+    .links ul li a {
+        color: #fff;
+        border: 1px solid white;
+        padding: 8px;
+        margin: 5px 5px 0px 2px;
+        font-size: 10px;
+        transition: 2s;
+    }
+    .links {
+        position: absolute;
+        width: 50%;
+        top: 50px;
+        left: 32%;
+    }
 }
 
 @media screen and (max-width:1000px) {
@@ -380,17 +407,17 @@ h1.footer-logo {
     padding: 5px;
     margin: 10px;
     line-height: 4;
+    height: 140px;
     border-radius: 8px;
     width: 25%;
     position: relative;
     left: 16%;
-    height: 122px;
-    bottom: 96px;
+    bottom: 108px;
 }
 .links {
     position: absolute;
     width: 45%;
-    top: 50px;
+    top: 60px;
     left: 32%;
 }
 
@@ -411,7 +438,7 @@ h1.footer-logo {
 .links ul li a:hover {
     background-color: #ffc107;
     padding-left: 16px;
-    border: #ffc107;
+    border: 1px solid #ffc107;
     transition: 2s;
 }
 
