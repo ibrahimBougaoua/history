@@ -16,6 +16,7 @@ h2:hover {
     color: #ffc107;
     transition: 1s;
     box-shadow: inset 0 -2px #ffc107;
+    box-shadow: inset 0 -2px #ffc107;
 }
 strong:hover{
     color: #ffc107;
@@ -190,6 +191,7 @@ header {
 
 p {
     line-height: 18px;
+    color: #4a4a4a;
 }
 
 a {
@@ -249,7 +251,7 @@ th:hover {
 }
 td {
     padding: 5px;
-    color: #444;
+    color: #4a4a4a;
 }
 footer.footer {
     position: relative;
@@ -400,24 +402,9 @@ span.top {
     display: block;
 }
 
+/*
 @media screen and (max-width:1000px) {
-    ul.menu {
-        max-width: 100%;
-        margin-left: -40px;
-    }
-    ul.menu li {
-        width: 100%;
-        text-align:center;
-    }
-    ul.menu li:hover {
-        background-color:#ffc107;
-    }
-    .menu > li:hover > a {
-        background-color:transparent;
-    }
-    .submenu, .supersub {
-        width: 100%;
-    }
+
     .content {
         margin: 20px 30px;
     }
@@ -453,7 +440,6 @@ span.top {
         left: 0!important;
     }
     .links ul li {
-        /* float: left; */
         margin: 15px 0 6px 0!important;
     }
     .links ul li a {
@@ -465,16 +451,74 @@ span.top {
         transition: 2s;
     }
 }
-
+*/
 
 
 @media screen and (max-width:500px) {
+    ul.menu {
+        max-width: 100%;
+        margin-left: -40px;
+    }
+    ul.submenu {
+        margin-left: -40px!important;
+    }
+    ul.submenu li {
+        width: 523px!important;
+    }
+    ul.supersub li {
+        width: 563px!important;
+    }
+    ul.submenu li a {
+        margin-left: 40px!important;
+    }
+    ul.supersub li a {
+        margin-left: 70px!important;
+    }
+    ul.supersub {
+        margin-left: -603px!important;
+        position: relative;
+    }
+    ul.menu li {
+        width: 100%;
+        text-align:center;
+    }
     .menu li:first-child:hover {
-        padding-left: 0px;
+        padding-left: 0!important;
         transition: 1s;
     }
-    .supersub {
-        left: 10em!important;
+    .submenu li:first-child:hover {
+        padding-left: 0!important;
+        background-color: #fff;
+        color: #3F51B5;
+        transition: 1s;
+    }
+    .supersub li:first-child:hover {
+        padding-left: 0!important;
+        background-color: #fff!important;
+        color: #3F51B5;
+        transition: 1s;
+    }
+    .supersub li:hover {
+        background-color: #3f51b5!important;
+        color: #fff!important;
+        padding-left: 0!important;
+        transition: 1s;
+    }
+    .supersub li {
+        border-bottom: 1px solid #a57b007d!important;
+    }
+    ul.menu li:hover {
+        background-color:#ffc107;
+    }
+    .menu > li:hover > a {
+        background-color:transparent;
+    }
+    .submenu, .supersub {
+        width: 100%;
+    }
+    .right {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
     }
     .content {
         margin: 20px 18px;
