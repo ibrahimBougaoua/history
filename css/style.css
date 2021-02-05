@@ -454,7 +454,8 @@ span.top {
 */
 
 
-@media screen and (max-width:500px) {
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width:600px) {
     ul.menu {
         max-width: 100%;
         margin-left: -40px;
@@ -591,3 +592,148 @@ span.top {
         transition: 2s;
     }
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    ul.menu {
+        max-width: 100%;
+        margin-left: -40px;
+    }
+    ul.submenu {
+        margin-left: -40px!important;
+    }
+    ul.submenu li {
+        width: 784px!important;
+    }
+    ul.supersub li {
+        width: 824px!important;
+    }
+    ul.submenu li a {
+        margin-left: 30px!important;
+    }
+    ul.supersub li a {
+        margin-left: 50px!important;
+    }
+    ul.supersub {
+        margin-left: -864px!important;
+        position: relative;
+    }
+    ul.menu li {
+        width: 100%;
+        text-align:center;
+    }
+    .menu li:first-child:hover {
+        padding-left: 0!important;
+        transition: 1s;
+    }
+    .submenu li:first-child:hover {
+        padding-left: 0!important;
+        background-color: #fff;
+        color: #3F51B5;
+        transition: 1s;
+    }
+    .supersub li:first-child:hover {
+        padding-left: 0!important;
+        background-color: #fff!important;
+        color: #3F51B5;
+        transition: 1s;
+    }
+    .supersub li:hover {
+        background-color: #3f51b5!important;
+        color: #fff!important;
+        padding-left: 0!important;
+        transition: 1s;
+    }
+    .supersub li {
+        border-bottom: 1px solid #a57b007d!important;
+    }
+    ul.menu li:hover {
+        background-color:#ffc107;
+    }
+    .menu > li:hover > a {
+        background-color:transparent;
+    }
+    .submenu, .supersub {
+        width: 100%;
+    }
+    .right {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+    .content {
+        margin: 20px 30px;
+    }
+    main.main {
+        width:100%;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .top a {
+        font-size: 12px!important;
+    }
+    aside.aside {
+        margin-top: 12px;
+        width:100%;
+    }
+    .aside h2 {
+        font-size: 16px!important;
+    }
+    th{
+        font-size: 16px!important;
+    }
+    td{
+        font-size: 13px!important;
+    }
+    address {
+        width: 100%;
+        left: 0;
+        margin: 20px 30px 95px 30px;
+        padding: 1.5vw;
+        bottom: 0;
+        font-size: 14px;
+    }
+    h1.footer-logo {
+        width: 45% !important;
+        font-size: 22px;
+        position: absolute;
+        padding: 5px;
+        margin: 0px;
+        line-height: 14vw;
+        height: 14vw;
+        left: 28vw;
+        bottom: 28vw;
+    }
+    .links {
+        width: 100%!important;
+        top: 135px!important;
+        left: 0!important;
+    }
+    .links ul li {
+        /* float: left; */
+        margin: 12px 0 6px 0!important;
+    }
+    .links ul li a {
+        color: #fff;
+        border: 1px solid white;
+        padding: 8px!important;
+        margin: 5px 5px 19px 4px !important;
+        font-size: 12px!important;
+        transition: 2s;
+    }
+}
+
+/* Medium devices (landscape tablets, 770px and up) */
+@media only screen and (min-width: ) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
