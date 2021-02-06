@@ -141,7 +141,7 @@ main.main {
     float: left;
     width: 70%;
     background-color: #fff;
-    box-shadow: 0 0px 2px rgb(0 0 0 / 35%);
+    box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
 }
 
 aside.aside {
@@ -181,7 +181,7 @@ section {
     color: #3e3e3e;
     padding: 12px;
     font-family: sans-serif;
-    box-shadow: 0 0px 2px rgb(0 0 0 / 35%);
+    box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
 }
 
 header {
@@ -201,7 +201,7 @@ a {
 
 section#biographie ol li section {
     margin: -10px;
-    box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
+    box-shadow: 0 0px 2px rgb(0 0 0 / 35%);
     margin-bottom: 5px;
 }
 
@@ -352,9 +352,9 @@ ht-yellow:hover {
 }
 .links {
     position: absolute;
-    width: 45%;
+    width: 50%;
     top: 60px;
-    left: 32%;
+    left: 26%;
 }
 
 .links ul li {
@@ -402,60 +402,8 @@ span.top {
     display: block;
 }
 
-/*
-@media screen and (max-width:1000px) {
-
-    .content {
-        margin: 20px 30px;
-    }
-    main.main {
-        width:100%;
-    }
-    aside.aside {
-        margin-top: 12px;
-        width:100%;
-    }
-    address {
-        width: 100%;
-        left: 0;
-        margin: 20px 30px 90px 30px;
-        padding: 1.5vw;
-        bottom: 0;
-        font-size: 15px;
-    }
-    h1.footer-logo {
-        width: 45% !important;
-        font-size: 22px;
-        position: absolute;
-        padding: 5px;
-        margin: 0px;
-        line-height: 14vw;
-        height: 14vw;
-        left: 28vw;
-        bottom: 32vw;
-    }
-    .links {
-        width: 100%!important;
-        top: 140px!important;
-        left: 0!important;
-    }
-    .links ul li {
-        margin: 15px 0 6px 0!important;
-    }
-    .links ul li a {
-        color: #fff;
-        border: 1px solid white;
-        padding: 8px!important;
-        margin: 5px 5px 0px 2px !important;
-        font-size: 13px!important;
-        transition: 2s;
-    }
-}
-*/
-
-
-/* Extra small devices (phones, 600px and down) */
-@media screen and (max-width:600px) {
+/* Extra small devices (phones, 640px and down) */
+@media screen and (max-width:640px) {
     ul.menu {
         max-width: 100%;
         margin-left: -40px;
@@ -572,7 +520,7 @@ span.top {
         line-height: 14vw;
         height: 14vw;
         left: 28vw;
-        bottom: 47vw;
+        bottom: 230px;
     }
     .links {
         width: 100%!important;
@@ -580,7 +528,6 @@ span.top {
         left: 0!important;
     }
     .links ul li {
-        /* float: left; */
         margin: 12px 0 6px 0!important;
     }
     .links ul li a {
@@ -593,75 +540,10 @@ span.top {
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    ul.menu {
-        max-width: 100%;
-        margin-left: -40px;
-    }
-    ul.submenu {
-        margin-left: -40px!important;
-    }
-    ul.submenu li {
-        width: 784px!important;
-    }
-    ul.supersub li {
-        width: 824px!important;
-    }
-    ul.submenu li a {
-        margin-left: 30px!important;
-    }
-    ul.supersub li a {
-        margin-left: 50px!important;
-    }
-    ul.supersub {
-        margin-left: -864px!important;
-        position: relative;
-    }
-    ul.menu li {
-        width: 100%;
-        text-align:center;
-    }
-    .menu li:first-child:hover {
-        padding-left: 0!important;
-        transition: 1s;
-    }
-    .submenu li:first-child:hover {
-        padding-left: 0!important;
-        background-color: #fff;
-        color: #3F51B5;
-        transition: 1s;
-    }
-    .supersub li:first-child:hover {
-        padding-left: 0!important;
-        background-color: #fff!important;
-        color: #3F51B5;
-        transition: 1s;
-    }
-    .supersub li:hover {
-        background-color: #3f51b5!important;
-        color: #fff!important;
-        padding-left: 0!important;
-        transition: 1s;
-    }
-    .supersub li {
-        border-bottom: 1px solid #a57b007d!important;
-    }
-    ul.menu li:hover {
-        background-color:#ffc107;
-    }
-    .menu > li:hover > a {
-        background-color:transparent;
-    }
-    .submenu, .supersub {
-        width: 100%;
-    }
-    .right {
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-    }
+/* Extra small devices (phones, 640px and down) */
+@media screen and (min-width:641px) and (max-width:1200px){
     .content {
-        margin: 20px 30px;
+        margin: 20px 18px;
     }
     main.main {
         width:100%;
@@ -673,13 +555,13 @@ span.top {
         font-size: 18px;
     }
     h4 {
-        font-size: 15px;
+        font-size: 16px;
     }
     p {
-        font-size: 14px;
+        font-size: 15px;
     }
     .top a {
-        font-size: 12px!important;
+        font-size: 15px!important;
     }
     aside.aside {
         margin-top: 12px;
@@ -689,7 +571,7 @@ span.top {
         font-size: 16px!important;
     }
     th{
-        font-size: 16px!important;
+        font-size: 15px!important;
     }
     td{
         font-size: 13px!important;
@@ -697,10 +579,10 @@ span.top {
     address {
         width: 100%;
         left: 0;
-        margin: 20px 30px 95px 30px;
-        padding: 1.5vw;
+        margin: 20px 30px 100px 30px;
+        padding: 20px;
         bottom: 0;
-        font-size: 14px;
+        font-size: 16px;
     }
     h1.footer-logo {
         width: 45% !important;
@@ -708,32 +590,25 @@ span.top {
         position: absolute;
         padding: 5px;
         margin: 0px;
-        line-height: 14vw;
-        height: 14vw;
+        line-height: 100px;
+        height: 100px;
         left: 28vw;
-        bottom: 28vw;
+        bottom: 245px;
     }
     .links {
         width: 100%!important;
-        top: 135px!important;
+        top: 172px!important;
         left: 0!important;
     }
     .links ul li {
-        /* float: left; */
         margin: 12px 0 6px 0!important;
     }
     .links ul li a {
         color: #fff;
         border: 1px solid white;
         padding: 8px!important;
-        margin: 5px 5px 19px 4px !important;
-        font-size: 12px!important;
+        margin: 5px 5px 0px 2px !important;
+        font-size: 13px!important;
         transition: 2s;
     }
 }
-
-/* Medium devices (landscape tablets, 770px and up) */
-@media only screen and (min-width: ) {...}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
