@@ -1,13 +1,613 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
+    <!--link rel="stylesheet" href="css/style.css"-->
     <title>Larbi Ben M'hidi</title>
 </head>
 <body>
 
+<style>
+    /* generale style */
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        list-style: none;
+    }
+
+    /* help style */
+    ht-yellow:hover {
+        color: white;
+    }
+    .ht-blue {
+        color: #ffffff;
+        font-weight: 600;
+        background-color: #3f51b5;
+        border-radius: 60px 0px 56px 0px;
+        margin-right: 8px;
+        padding: 15px;
+    }
+    .ht-skey {
+        color: #ffc107;
+    }
+    .ht-yellow {
+        color: #3f51b5;
+        font-weight: 600;
+        background-color: #fff;
+        border-radius: 60px 0px 56px 0px;
+        margin-right: 8px;
+        padding: 15px;
+    }
+    .hm-yellow {
+        /* color: #ffc107; */
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+    /* header style */
+    .header {
+        background-color: #3f51b5;
+        padding: 10px;
+        height: 100px;
+        line-height: 0;
+    }
+
+    h1.header-logo {
+        text-align: center;
+        color: #fff;
+        font-style: italic;
+        font-family: inherit;
+        position: relative;
+        top: 28px;
+    }
+
+    /* menu style */
+    .navbar {
+        background-color: #3f51b5;
+        box-shadow: 0 0px 30px rgb(0 0 0 / 50%);
+        line-height: 25px;
+    }
+    ul.menu {
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+    .menu li {
+        list-style: none;
+    }
+    .menu li a {
+        transition: 1s;
+        color: rgb(255 255 255);
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        padding: 12px 18px;
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+    .menu li:hover {
+        background-color: #3f51b5;
+        transition: 1s;
+    }
+
+    .menu > li {
+        margin:0;
+        margin-right: -4px;
+        display: inline-block;
+        transition: 1s;
+    }
+    .menu li:hover .submenu, .submenu li:hover .supersub {
+        display: block;
+    }
+    .supersub {
+        top: 0px;
+        right: 0px;
+        transform: translate(100%,0);
+    }
+    .submenu li {
+        margin-left: -40px;
+        position: relative;
+        cursor: pointer;
+    }
+    .submenu li a{
+        color: #fff;
+    }
+    .submenu, .supersub {
+        background-color: #ffc107;
+        position: absolute;
+        display: none;
+    }
+    .menu > li:hover > a {
+        box-shadow: inset 0 -5px #ffc107;
+        background-color: #ffc107;
+        color:#fff!important;
+    }
+    .arrow {
+        border: solid #ffffff;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        position: relative;
+        top: -2px;
+    }
+    .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        position: relative;
+        left: -10px;
+    }
+    .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+
+    .menu li:first-child {
+        background-color: #ffffff;
+        box-shadow: 0 0px 40px rgb(0 0 0 / 30%);
+    }
+    .menu li:first-child a {
+        color: #3f51b5;
+    }
+    .menu li:first-child:hover {
+        padding-left: 10px;
+        transition: 1s;
+    }
+
+    /* content style */
+    .content {
+        margin: 20px 120px;
+    }
+
+    /* main style */
+    main.main {
+        float: left;
+        width: 70%;
+        background-color: #fff;
+        box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
+    }
+
+    ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    ol li {
+        padding: 10px;
+    }
+    figure {
+        text-align: center;
+    }
+    figcaption {
+        color: #444444;
+        font-size: 70%;
+        text-align: center;
+        font-weight: 600;
+        margin: 5px;
+    }
+    header {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    section {
+        font-size: 15px;
+        color: #3e3e3e;
+        padding: 12px;
+        font-family: sans-serif;
+        box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
+    }
+    section#biographie ol li section {
+        margin: -10px;
+        box-shadow: 0 0px 2px rgb(0 0 0 / 35%);
+        margin-bottom: 5px;
+    }
+    p {
+        line-height: 18px;
+        color: #4a4a4a;
+    }
+    a {
+        text-decoration: none;
+        color: #3f51b5;
+    }
+    h4 {
+        font-size: 16px;
+        margin: 0;
+        font-weight: 800;
+        color: #3f51b5;
+        text-decoration-line: underline;
+    }
+    h2 {
+        color: #3F51B5;
+        text-decoration-line: underline;
+    }
+    h4:hover {
+        color: #ffc107;
+        transition: 1s;
+        box-shadow: inset 0 -1px #ffc107;
+    }
+    h3:hover {
+        color: #ffc107;
+        transition: 1s;
+        box-shadow: inset 0 -3px #ffc107;
+    }
+    h2:hover {
+        color: #ffc107;
+        transition: 1s;
+        box-shadow: inset 0 -2px #ffc107;
+    }
+    strong:hover{
+        color: #ffc107;
+        transition: 1s;
+        box-shadow: inset 0 -2px #ffc107;
+    }
+    h4,h3,h2,strong {
+        transition: 1s;
+        cursor: pointer;
+    }
+    strong {
+        color: #3f51b5;
+    }
+    h3 {
+        color: #3f51b5;
+        text-decoration-line: underline;
+    }
+
+    /* aside style */
+    aside.aside {
+        float: right;
+        width: 28%;
+        background-color: #fff;
+        box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
+    }
+    aside.aside h2 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: sans-serif;
+        background-color: #3f51b5;
+        color: #fff;
+        margin: 0;
+        padding: 12px;
+    }
+    tr {
+        display: grid;
+        box-shadow: 0 0px 2px rgb(0 0 0 / 35%);
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    table {
+        padding: 5px;
+        width: 100%;
+    }
+    th {
+        text-align: left;
+        color: #3949a3;
+        padding: 5px;
+        transition: 1s;
+    }
+    th:hover {
+        cursor: pointer;
+        color: #ffc107;
+        transition: 1s;
+        box-shadow: inset 0 -1px #ffc107;
+    }
+    td {
+        padding: 5px;
+        color: #4a4a4a;
+    }
+
+    /* footer style */
+    footer.footer {
+        position: relative;
+        top: 125px;
+        width: 100%;
+        display: flex;
+        background-color: #3f51b5;
+        box-shadow: 0 0px 30px rgb(0 0 0 / 50%);
+    }
+    address {
+        color: #3f51b5;
+        font-size: 16px;
+        font-weight: 800;
+        text-align: center;
+        box-shadow: 0 0px 10px rgb(0 0 0 / 30%);
+        background-color: white;
+        padding: 12px;
+        margin: 15px;
+        border-radius: 8px;
+        width: 35%;
+        height: 6em;
+        position: relative;
+        left: 20%;
+        bottom: 95px;
+    }
+    address a {
+        color: #464646;
+    }
+    .footer-logo {
+        color: #3f51b5;
+        font-size: 32px;
+        text-align: center;
+        box-shadow: 0 0px 10px rgb(0 0 0 / 30%);
+        background-color: white;
+        padding: 5px;
+        margin: 10px;
+        line-height: 4;
+        height: 140px;
+        border-radius: 8px;
+        width: 25%;
+        position: relative;
+        left: 16%;
+        bottom: 108px;
+    }
+    .links {
+        position: absolute;
+        width: 50%;
+        top: 60px;
+        left: 26%;
+    }
+
+    .links ul li {
+        float: left;
+        margin: 22px 0 0 0;
+    }
+
+    .links ul li a {
+        color: #fff;
+        border: 1px solid white;
+        padding: 8px;
+        margin: 5px 5px 0px 2px;
+        font-size: 16px;
+        transition: 2s;
+    }
+
+    .links ul li a:hover {
+        background-color: #ffc107;
+        padding-left: 16px;
+        border: 1px solid #ffc107;
+        transition: 2s;
+    }
+
+    .links ul {
+        margin: 0;
+    }
+
+    /* top style */
+    span.top a {
+        color: #fff;
+        background-color: #3f51b5;
+        padding: 8px;
+        font-size: 15px;
+        border-radius: 5px;
+        float: right;
+        position: relative;
+        top: -30px;
+        transition: 1.5s;
+    }
+    span.top a:hover {
+        background-color: #ffc107;
+        transition: 1.5s;
+    }
+    span.top {
+        margin: 40px 0 0 0;
+        display: block;
+    }
+
+    /* Extra small devices (phones, 500px and down) */
+    @media screen and (max-width:500px) {
+        ul.menu {
+            max-width: 100%;
+            margin-left: -40px;
+        }
+        ul.submenu {
+            margin-left: -40px!important;
+        }
+        ul.submenu li {
+            width: 523px!important;
+        }
+        ul.supersub li {
+            width: 563px!important;
+        }
+        ul.submenu li a {
+            margin-left: 40px!important;
+        }
+        ul.supersub li a {
+            margin-left: 70px!important;
+        }
+        ul.supersub {
+            margin-left: -603px!important;
+            position: relative;
+        }
+        ul.menu li {
+            width: 100%;
+            text-align:center;
+        }
+        .menu li:first-child:hover {
+            padding-left: 0!important;
+            transition: 1s;
+        }
+        .submenu li:first-child:hover {
+            padding-left: 0!important;
+            background-color: #fff;
+            color: #3F51B5;
+            transition: 1s;
+        }
+        .supersub li:first-child:hover {
+            padding-left: 0!important;
+            background-color: #fff!important;
+            color: #3F51B5;
+            transition: 1s;
+        }
+        .supersub li:hover {
+            background-color: #3f51b5!important;
+            color: #fff!important;
+            padding-left: 0!important;
+            transition: 1s;
+        }
+        .supersub li {
+            border-bottom: 1px solid #a57b007d!important;
+        }
+        ul.menu li:hover {
+            background-color:#ffc107;
+        }
+        .menu > li:hover > a {
+            background-color:transparent;
+        }
+        .submenu, .supersub {
+            width: 100%;
+        }
+        .right {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+        .content {
+            margin: 20px 18px;
+        }
+        main.main {
+            width:100%;
+        }
+        h2 {
+            font-size: 16px;
+        }
+        h3 {
+            font-size: 15px;
+        }
+        h4 {
+            font-size: 14px;
+        }
+        p {
+            font-size: 13px;
+        }
+        .top a {
+            font-size: 12px!important;
+        }
+        aside.aside {
+            margin-top: 12px;
+            width:100%;
+        }
+        .aside h2 {
+            font-size: 15px!important;
+        }
+        th{
+            font-size: 13px!important;
+        }
+        td{
+            font-size: 11px!important;
+        }
+        address {
+            width: 100%;
+            left: 0;
+            margin: 20px 30px 95px 30px;
+            padding: 1.5vw;
+            bottom: 0;
+            font-size: 14px;
+        }
+        h1.footer-logo {
+            width: 45% !important;
+            font-size: 22px;
+            position: absolute;
+            padding: 5px;
+            margin: 0px;
+            line-height: 14vw;
+            height: 14vw;
+            left: 28vw;
+            bottom: 230px;
+        }
+        .links {
+            width: 100%!important;
+            top: 130px!important;
+            left: 0!important;
+        }
+        .links ul li {
+            margin: 12px 0 6px 0!important;
+        }
+        .links ul li a {
+            color: #fff;
+            border: 1px solid white;
+            padding: 8px!important;
+            margin: 5px 5px 0px 2px !important;
+            font-size: 11px!important;
+            transition: 2s;
+        }
+    }
+
+    /* devices (between 500px and 1200px) */
+    @media screen and (min-width:501px) and (max-width:1200px){
+        .content {
+            margin: 20px 18px;
+        }
+        main.main {
+            width:100%;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        h4 {
+            font-size: 16px;
+        }
+        p {
+            font-size: 15px;
+        }
+        .top a {
+            font-size: 15px!important;
+        }
+        aside.aside {
+            margin-top: 12px;
+            width:100%;
+        }
+        .aside h2 {
+            font-size: 16px!important;
+        }
+        th{
+            font-size: 15px!important;
+        }
+        td{
+            font-size: 13px!important;
+        }
+        address {
+            width: 100%;
+            left: 0;
+            margin: 20px 30px 100px 30px;
+            padding: 20px;
+            bottom: 0;
+            font-size: 16px;
+        }
+        h1.footer-logo {
+            width: 45% !important;
+            font-size: 22px;
+            position: absolute;
+            padding: 5px;
+            margin: 0px;
+            line-height: 100px;
+            height: 100px;
+            left: 28vw;
+            bottom: 245px;
+        }
+        .links {
+            width: 100%!important;
+            top: 172px!important;
+            left: 0!important;
+        }
+        .links ul li {
+            margin: 12px 0 6px 0!important;
+        }
+        .links ul li a {
+            color: #fff;
+            border: 1px solid white;
+            padding: 8px!important;
+            margin: 5px 5px 0px 2px !important;
+            font-size: 13px!important;
+            transition: 2s;
+        }
+    }
+</style>
+
 <!-- start header -->
-<header class="header">
+<header class="header" id="haut">
     <h1 class="header-logo"><span class="ht-yellow"><span class="ht-skey">L</span>arbi </span> <span class="ht-skey">B</span>en <span class="ht-skey">M</span>'hidi</h1>
 </header>
 <!-- end header -->
@@ -49,7 +649,7 @@
             <header><h2>1.Introduction</h2></header>
             <p><strong>Mohamed Larbi Ben M'hidi</strong>, né en <strong>1923</strong> à Aïn M'lila dans l'actuelle wilaya d'Oum El Bouaghi et mort assassiné en <strong>1957</strong> à Alger, est un militant nationaliste algérien, membre du PPA, puis du MTLD, un des fondateurs du FLN en <strong>1954</strong>, puis combattant pendant la guerre d'Algérie <strong>(1954-1962)</strong>. Arrêté en février <strong>1957</strong>, il est torturé, puis exécuté sans jugement par l'armée française durant la bataille d’Alger.</p>
             <p>Il est considéré comme un héros de la révolution en Algérie et son nom a été attribué à plusieurs lieux et édifices institutionnels.</p>
-            <span class="top"><a href="#">Haut</a></span>
+            <span class="top"><a href="#haut">Haut</a></span>
             </section>
         </li>
         <li>
@@ -101,7 +701,7 @@
                                     </section>
                                 </li>
                             </ol>
-                            <span class="top"><a href="#">Haut</a></span>
+                            <span class="top"><a href="#haut">Haut</a></span>
                         </section>
                     </li>
                 </ol>
@@ -115,7 +715,7 @@
                 <p>Héros national en Algérie, il est enterré dans le « carré des martyrs » du cimetière d'El Alia, à Alger.</p>
                 <p>En son honneur, Marsa Ben M'Hidi, une commune de la wilaya de Tlemcen, porte son nom. Il en de même de l'ex-village Morris, maintenant sous préfecture dans la Wilaya d'El Tarf, qui porte le nom Ben M'hidi.</p>
                 <p>À l'instar de la rue Larbi Ben M’Hidi, une importante artère d'Alger <strong>(ancienne rue d'Isly)</strong>, chaque ville d'Algérie a une rue portant son nom, ainsi que différents établissements scolaires à travers le pays, l’université d'Oum El Bouaghi, et des plages de la ville de Skikda <strong>(anciennement plages Jeanne d'Arc)</strong>.</p>
-                <span class="top"><a href="#">Haut</a></span>
+                <span class="top"><a href="#haut">Haut</a></span>
             </section>
         </li> 
     </ol>

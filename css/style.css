@@ -31,7 +31,7 @@ ht-yellow:hover {
     padding: 15px;
 }
 .hm-yellow {
-    color: #ffc107;
+    /* color: #ffc107; */
     font-size: 18px;
     font-weight: 600;
     text-decoration: underline;
@@ -385,8 +385,8 @@ span.top {
     display: block;
 }
 
-/* Extra small devices (phones, 640px and down) */
-@media screen and (max-width:640px) {
+/* Extra small devices (phones, 500px and down) */
+@media screen and (max-width:500px) {
     ul.menu {
         max-width: 100%;
         margin-left: -40px;
@@ -523,8 +523,8 @@ span.top {
     }
 }
 
-/* devices (between 640px and 1200px) */
-@media screen and (min-width:641px) and (max-width:1200px){
+/* devices (between 500px and 1200px) */
+@media screen and (min-width:501px) and (max-width:1200px){
     .content {
         margin: 20px 18px;
     }
